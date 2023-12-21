@@ -31,6 +31,7 @@ img {
 div {
   display: block;
 }
+
 .icon {
   position: relative;
   width: 15px;
@@ -65,6 +66,9 @@ div {
 #wrapper #container {
   width: 100%;
   background-color: #e8e8eb;
+}
+.mo_version {
+  display: none;
 }
 
 /*========header style start========*/
@@ -142,9 +146,7 @@ div {
 
 /*=======intro bg style start=======*/
 
-.intro_mobile{
-  display: none;
-}
+
 .intro_wrap {
   z-index: 2;
   position: relative;
@@ -316,11 +318,7 @@ div {
 /*==========================
 =========section1 style start=======
 ===========================*/
-.intro_mobile,
-.mobile_section,
-.mobile_wrap01{
-  display: none;
-}
+
 
 .left_wrap,
 .right_wrap,
@@ -335,7 +333,7 @@ div {
 .section2_wrap,
 .section4_wrap,
 .section5_wrap,
-.section_wrap{
+.section_wrap {
   position: relative;
   overflow: hidden;
   width: 100%;
