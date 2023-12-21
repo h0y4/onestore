@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/pc.css">
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <script src="js/index.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -27,7 +28,7 @@
     <!--intro start-->
     <div class="intro_wrap">
       <!--mobile-->
-      <div class="intro_mobile">
+      <div class="intro_mobile mo_version">
         <div class="intro_bg">
           <img src="img/intro_img_pc_mw2.png" alt="">
           <div class="intro_itemList imgAni">
@@ -98,7 +99,7 @@
       </div>
     </div>
     <!--mobile_section-->
-    <div class="mobile_section_wrap">
+    <div class="mobile_section_wrap mo_version">
       <div class="mobile_section">
         <div class="mobile_wrap">
           <div class="mobile_title">
@@ -128,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile_wrap mobile_wrap01">
+      <div class="mobile_wrap mobile_wrap01 mo_version">
         <div class="mobile_title">
           <div class="mobile_inner">
             <div class="section_num_list">
@@ -158,7 +159,7 @@
       </div>
     </div>
     <!--section 1 start game-->
-    <div class="section_wrap section1_wrap pc_section">
+    <div class="section_wrap section1_wrap pc_version">
       <div class="section1_inner cboth">
         <div class="left_wrap">
           <img src="img/section_num_05_baner.png" alt="" class="imgAni2">
@@ -190,7 +191,7 @@
       </div>
     </div>
     <!--section 2 start game+app-->
-    <div class="section_wrap section2_wrap pc_section">
+    <div class="section_wrap section2_wrap pc_version">
       <div class="section2_inner cboth">
         <div class="left_wrap">
           <img src="img/section_num_06.png" alt="">
@@ -220,8 +221,21 @@
       </div>
     </div>
     <!--section 3 start app store-->
-    <div class="section3_wrap pc_section">
-      <div class="section3_inner">
+    <div class="section3_wrap">
+      <!--section3 app mobile version-->
+      <div class="section3_inner_mobile mo_version">
+        <img src="img/onestore_app_img_mw.png" alt="">
+        <div class="section3_item_list">
+          <ul>
+            <li class="app_title textBoxAni"><img src="img/onestore_app_title_mw.png" alt=""></li>
+            <li class="app_bar appAni01"><img src="img/onestore_app_bar_mw.png" alt=""></li>
+            <li class="app_icon appAni02"><img src="img/onestore_app_icon_mw.png" alt=""></li>
+            <li class="app_integrated appAni03"><img src="img/onestore_app_integrated_mw.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <!--pc version-->
+      <div class="section3_inner pc_version">
         <img src="img/onestore_app_img.png" alt="">
         <div class="section3_item_list">
           <ul>
@@ -233,9 +247,33 @@
         </div>
       </div>
     </div>
-    <!--section 4 start 1번 phone Ani-->
-    <div class="section4_wrap pc_section">
-      <div class="section4_inner cboth">
+    <!--phone section1-->
+    <div class="section4_wrap">
+      <!--phone section1 mobile top-->
+      <div class="section3_title mo_version">
+        <div class="section3_inner_mobile">
+          <img src="img/section_num_03_mw.png" alt="">
+          <div class="section3_item_list">
+            <ul>
+              <li class="num_img imgAni"><img src="img/section_num_03_img_mw.png" alt=""></li>
+              <li class="num_title textBoxAni"><img src="img/section_num_03_title_mw.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section1 mobile bottom-->
+      <div class="phone_inner cboth mo_version">
+        <div class="phone_img_wrap">
+          <img src="img/section_img_032.png" alt="">
+          <div class="phone_img_list">
+            <ul>
+              <li class="phone_img01 phoneAni"><img src="img/section_img_032_item.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section1 pc version-->
+      <div class="section4_inner cboth pc_version">
         <div class="left_wrap">
           <img src="img/section_img_032.png" alt="" class="imgAni2">
           <div class="section4_img_list">
@@ -257,9 +295,33 @@
         </div>
       </div>
     </div>
-    <!--section 5 start 2번 phone Ani-->
-    <div class="section5_wrap pc_section">
-      <div class="section5_inner cboth">
+    <!--phone section2-->
+    <div class="section5_wrap">
+      <!--phone section2 mobile top-->
+      <div class="section3_title mo_version">
+        <div class="section3_inner_mobile">
+          <img src="img/section_num_01_mw.png" alt="">
+          <div class="section3_item_list">
+            <ul>
+              <li class="num_img imgAni"><img src="img/section_num_01_img_mw.png" alt=""></li>
+              <li class="num_title textBoxAni"><img src="img/section_num_01_title_mw.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section2 mobile bottom-->
+      <div class="phone_inner cboth mo_version">
+        <div class="phone_img_wrap">
+          <img src="img/section_img_01.png" alt="">
+          <div class="phone_img_list">
+            <ul>
+              <li class="phone_img01 phoneAni2"><img src="img/section_img_01_item_new.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section2 pc version-->
+      <div class="section5_inner cboth pc_version">
         <div class="left_wrap">
           <img src="img/section_num_01.png" alt="">
           <div class="section5_num_list">
@@ -279,9 +341,34 @@
         </div>
       </div>
     </div>
-    <!--section 6 start 3번 phone Ani-->
-    <div class="section4_wrap pc_section">
-      <div class="section4_inner cboth">
+
+    <!--phone section3-->
+    <div class="section4_wrap">
+      <!--phone section3 mobile top-->
+      <div class="section3_title mo_version">
+        <div class="section3_inner_mobile">
+          <img src="img/section_num_03_mw.png" alt="">
+          <div class="section3_item_list">
+            <ul>
+              <li class="num_img imgAni"><img src="img/section_num_02_img_mw.png" alt=""></li>
+              <li class="num_title textBoxAni"><img src="img/section_num_02_title_mw.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section3 mobile bottom-->
+      <div class="phone_inner cboth mo_version">
+        <div class="phone_img_wrap">
+          <img src="img/section_img_02.png" alt="">
+          <div class="phone_img_list">
+            <ul>
+              <li class="phone_img01 phoneAni3"><img src="img/section_img_02_item_new.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section3 pc version-->
+      <div class="section4_inner cboth pc_version">
         <div class="left_wrap">
           <img src="img/section_img_02.png" alt="" class="imgAni2">
           <div class="section4_img_list">
@@ -303,9 +390,39 @@
         </div>
       </div>
     </div>
-    <!--section 7 start 4번 phone Ani-->
-    <div class="section5_wrap pc_section">
-      <div class="section5_inner cboth inner">
+
+    <!--phone section4-->
+    <div class="section5_wrap">
+      <!--phone section4 mobile top-->
+      <div class="section3_title mo_version">
+        <div class="section3_inner_mobile">
+          <img src="img/section_num_04_mw.png" alt="">
+          <div class="section3_item_list">
+            <ul>
+              <li class="num_img imgAni"><img src="img/section_num_04_img_mw.png" alt=""></li>
+              <li class="num_title textBoxAni"><img src="img/section_num_04_title_mw_new.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section4 mobile bottom-->
+      <div class="phone_inner cboth mo_version">
+        <div class="phone_img_wrap">
+          <img src="img/section_img_04_new.png" alt="">
+          <div class="phone_img_list">
+            <ul class="imgAni phoneAni_imgList">
+              <li class="phoneAni_img_01"><img src="img/section_img_04_01_item_new.png" alt=""></li>
+              <li class="phoneAni_img_02"><img src="img/section_img_04_02_item_new.png" alt=""></li>
+              <li class="phoneAni_img_03"><img src="img/section_img_04_03_item_new.png" alt=""></li>
+              <li class="phoneAni_img_04"><img src="img/section_img_04_04_item_new.png" alt=""></li>
+              <li class="phoneAni_img_05 phoneAni6"></li>
+              <li class="phoneAni_img_06 phoneAni5"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--phone section4 pc version-->
+      <div class="section5_inner cboth inner pc_version">
         <div class="left_wrap">
           <img src="img/section_num_04.png" alt="">
           <div class="section5_num_list">
@@ -330,23 +447,25 @@
         </div>
       </div>
     </div>
-    <!--footer start-->
-    <div id="footer" class="pc_section">
-      <div class="notice_wrap">
-        <div class="notice_inner">
-          <dl>
-            <dt>공지사항</dt>
-            <dd><a href="#">[공지] 원스토어 쇼핑 모든 상품권 및 상품권 충전소 판매 중단 안내</a></dd>
-          </dl>
-          <a href="#" class="notice_btn"><i class="icon icon_btn">공지사항 더보기</i></a>
-        </div>
+  </div>
+  <!--footer start-->
+  <div id="footer">
+    <!--footer mobile version-->
+    <div class="notice_content_wrap mo_version">
+      <div class="notice_content_inner">
+        <dl>
+          <dt>공지사항</dt>
+          <dd><a href="#">[공지] 원스토어 쇼핑 모든 상품권 및 상품권 충전소 판매 중단 안내</a></dd>
+        </dl>
+        <a href="#" class="notice_btn"><i class="icon icon_btn">공지사항 더보기</i></a>
       </div>
-
-      <div class="content_wrap">
-        <div class="content_inner">
+    </div>
+    <div class="footer_content_wrap mo_version">
+      <div class="footer_content_inner">
+        <div class="footer_content_inner">
           <div class="footer_link_wrap">
             <ul class="conditions_wrap">
-              <li><a href="#">개인정보처리방침</a></li>
+              <li class="bolt_text"><a href="#">개인정보처리방침</a></li>
               <li><a href="#">이용약관</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">ONE store 개발자센터</a></li>
@@ -361,9 +480,6 @@
           <div class="footer_company_wrap">
             <ul class="cboth">
               <li class="footer_company_kt">
-                <!--                &lt;!&ndash;모바일&ndash;&gt;-->
-                <!--                <span></span>-->
-                <!--                &lt;!&ndash;모바일&ndash;&gt;-->
                 <ul>
                   <li><strong>대표이사 : </strong>김영섭</li>
                   <li><strong>주소 : </strong>경기도 성남시 분당구 불정로 90</li>
@@ -373,9 +489,6 @@
                 <span class="company_icon_box"><i class="icon icon_kt"></i></span>
               </li>
               <li class="footer_company_lg">
-                <!--                &lt;!&ndash;모바일&ndash;&gt;-->
-                <!--                <span></span>-->
-                <!--                &lt;!&ndash;모바일&ndash;&gt;-->
                 <ul>
                   <li><strong>대표이사 : </strong>황현식</li>
                   <li><strong>주소 : </strong>서울특별시 용산구 한강대로 32</li>
@@ -385,9 +498,6 @@
                 <span class="company_icon_box"><i class="icon icon_lg"></i></span>
               </li>
               <li class="footer_company_onestore">
-                <!--                &lt;!&ndash;모바일&ndash;&gt;-->
-                <!--                <span></span>-->
-                <!--                &lt;!&ndash;모바일&ndash;&gt;-->
                 <ul>
                   <li><strong>대표이사 : </strong>전동진</li>
                   <li><strong>주소 : </strong>경기도 성남시 분당구 판교역로 146번길 20</li>
@@ -408,6 +518,75 @@
               <li><a href=""><i class="icon icon_facebook"><span>facebook</span></i></a></li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+    <!--footer pc version-->
+    <div class="notice_wrap pc_version">
+      <div class="notice_inner">
+        <dl>
+          <dt>공지사항</dt>
+          <dd><a href="#">[공지] 원스토어 쇼핑 모든 상품권 및 상품권 충전소 판매 중단 안내</a></dd>
+        </dl>
+        <a href="#" class="notice_btn"><i class="icon icon_btn">공지사항 더보기</i></a>
+      </div>
+    </div>
+    <div class="content_wrap pc_version">
+      <div class="content_inner">
+        <div class="footer_link_wrap">
+          <ul class="conditions_wrap">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">ONE store 개발자센터</a></li>
+            <li><a href="#">지식재산권보호센터</a></li>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+          <ul class="contact_wrap">
+            <li>고객센터<em>1600-6573(유료)</em></li>
+            <li><a href="#">이메일<em>cscenter@onestore.co.kr</em></a></li>
+          </ul>
+        </div>
+        <div class="footer_company_wrap">
+          <ul class="cboth">
+            <li class="footer_company_kt">
+              <ul>
+                <li><strong>대표이사 : </strong>김영섭</li>
+                <li><strong>주소 : </strong>경기도 성남시 분당구 불정로 90</li>
+                <li><strong>사업자 등록번호 : </strong>102-81-42945</li>
+                <li><strong>통신판매업신고 : </strong><a href="#">제2002-경기성남-0048호</a></li>
+              </ul>
+              <span class="company_icon_box"><i class="icon icon_kt"></i></span>
+            </li>
+            <li class="footer_company_lg">
+              <ul>
+                <li><strong>대표이사 : </strong>황현식</li>
+                <li><strong>주소 : </strong>서울특별시 용산구 한강대로 32</li>
+                <li><strong>사업자 등록번호 : </strong>220-81-39938</li>
+                <li><strong>통신판매업신고 : </strong><a href="#">제2015-서울용산-00481호</a></li>
+              </ul>
+              <span class="company_icon_box"><i class="icon icon_lg"></i></span>
+            </li>
+            <li class="footer_company_onestore">
+              <ul>
+                <li><strong>대표이사 : </strong>전동진</li>
+                <li><strong>주소 : </strong>경기도 성남시 분당구 판교역로 146번길 20</li>
+                <li><strong>사업자 등록번호 : </strong>856-86-00329</li>
+                <li><strong>통신판매업신고 : </strong><a href="#">제2016-성남분당-0175호</a></li>
+              </ul>
+              <span class="company_icon_box"><i class="icon icon_onestore"></i></span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_info_wrap">
+          <p>KT(주), (주)LG유플러스, 원스토어(주)는 통신판매중개자로서 상품의 등록정보, 판매, 문의답변에 대한 의무와 책임은 각 판매자에게 있습니다.</p>
+          <p><span>&copy; One store Co., Ltd.</span></p>
+        </div>
+        <div class="footer_sns_wrap">
+          <ul class="footer_sns_inner">
+            <li><a href=""><i class="icon icon_youtube"><span>youtebe</span></i></a></li>
+            <li><a href=""><i class="icon icon_facebook"><span>facebook</span></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
