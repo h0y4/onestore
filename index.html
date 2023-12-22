@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/pc.css">
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
@@ -462,62 +464,60 @@
     </div>
     <div class="footer_content_wrap mo_version">
       <div class="footer_content_inner">
-        <div class="footer_content_inner">
-          <div class="footer_link_wrap">
-            <ul class="conditions_wrap">
-              <li class="bolt_text"><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">ONE store 개발자센터</a></li>
-              <li><a href="#">지식재산권보호센터</a></li>
-              <li><a href="#">회사소개</a></li>
-            </ul>
-            <ul class="contact_wrap">
-              <li>고객센터<em>1600-6573(유료)</em></li>
-              <li><a href="#">이메일<em>cscenter@onestore.co.kr</em></a></li>
-            </ul>
-          </div>
-          <div class="footer_company_wrap">
-            <ul class="cboth">
-              <li class="footer_company_kt">
-                <ul>
-                  <li><strong>대표이사 : </strong>김영섭</li>
-                  <li><strong>주소 : </strong>경기도 성남시 분당구 불정로 90</li>
-                  <li><strong>사업자 등록번호 : </strong>102-81-42945</li>
-                  <li><strong>통신판매업신고 : </strong><a href="#">제2002-경기성남-0048호</a></li>
-                </ul>
-                <span class="company_icon_box"><i class="icon icon_kt"></i></span>
-              </li>
-              <li class="footer_company_lg">
-                <ul>
-                  <li><strong>대표이사 : </strong>황현식</li>
-                  <li><strong>주소 : </strong>서울특별시 용산구 한강대로 32</li>
-                  <li><strong>사업자 등록번호 : </strong>220-81-39938</li>
-                  <li><strong>통신판매업신고 : </strong><a href="#">제2015-서울용산-00481호</a></li>
-                </ul>
-                <span class="company_icon_box"><i class="icon icon_lg"></i></span>
-              </li>
-              <li class="footer_company_onestore">
-                <ul>
-                  <li><strong>대표이사 : </strong>전동진</li>
-                  <li><strong>주소 : </strong>경기도 성남시 분당구 판교역로 146번길 20</li>
-                  <li><strong>사업자 등록번호 : </strong>856-86-00329</li>
-                  <li><strong>통신판매업신고 : </strong><a href="#">제2016-성남분당-0175호</a></li>
-                </ul>
-                <span class="company_icon_box"><i class="icon icon_onestore"></i></span>
-              </li>
-            </ul>
-          </div>
-          <div class="footer_info_wrap">
-            <p>KT(주), (주)LG유플러스, 원스토어(주)는 통신판매중개자로서 상품의 등록정보, 판매, 문의답변에 대한 의무와 책임은 각 판매자에게 있습니다.</p>
-            <p><span>&copy; One store Co., Ltd.</span></p>
-          </div>
-          <div class="footer_sns_wrap">
-            <ul class="footer_sns_inner">
-              <li><a href=""><i class="icon icon_youtube"><span>youtebe</span></i></a></li>
-              <li><a href=""><i class="icon icon_facebook"><span>facebook</span></i></a></li>
-            </ul>
-          </div>
+        <div class="footer_link_wrap">
+          <ul class="conditions_wrap">
+            <li class="bolt_text"><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">ONE store 개발자센터</a></li>
+            <li><a href="#">지식재산권보호센터</a></li>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+          <ul class="contact_wrap">
+            <li>고객센터<em>1600-6573(유료)</em></li>
+            <li><a href="#">이메일<em>cscenter@onestore.co.kr</em></a></li>
+          </ul>
+        </div>
+        <div class="footer_company_wrap">
+          <ul class="cboth">
+            <li class="footer_company_kt">
+              <span class="company_icon_box"><i class="icon icon_kt"></i></span>
+              <ul>
+                <li><strong>대표이사 : </strong>김영섭</li>
+                <li><strong>주소 : </strong>경기도 성남시 분당구 불정로 90</li>
+                <li><strong>사업자 등록번호 : </strong>102-81-42945</li>
+                <li><strong>통신판매업신고 : </strong><a href="#">제2002-경기성남-0048호</a></li>
+              </ul>
+            </li>
+            <li class="footer_company_lg">
+              <span class="company_icon_box"><i class="icon icon_lg"></i></span>
+              <ul>
+                <li><strong>대표이사 : </strong>황현식</li>
+                <li><strong>주소 : </strong>서울특별시 용산구 한강대로 32</li>
+                <li><strong>사업자 등록번호 : </strong>220-81-39938</li>
+                <li><strong>통신판매업신고 : </strong><a href="#">제2015-서울용산-00481호</a></li>
+              </ul>
+            </li>
+            <li class="footer_company_onestore">
+              <span class="company_icon_box"><i class="icon icon_onestore"></i></span>
+              <ul>
+                <li><strong>대표이사 : </strong>전동진</li>
+                <li><strong>주소 : </strong>경기도 성남시 분당구 판교역로 146번길 20</li>
+                <li><strong>사업자 등록번호 : </strong>856-86-00329</li>
+                <li><strong>통신판매업신고 : </strong><a href="#">제2016-성남분당-0175호</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_info_wrap">
+          <p>KT(주), (주)LG유플러스, 원스토어(주)는 통신판매중개자로서 상품의 등록정보, 판매, 문의답변에 대한 의무와 책임은 각 판매자에게 있습니다.</p>
+          <p><span>&copy; One store Co., Ltd.</span></p>
+        </div>
+        <div class="footer_sns_wrap">
+          <ul class="footer_sns_inner">
+            <li><a href=""><i class="icon icon_youtube"><span>youtebe</span></i></a></li>
+            <li><a href=""><i class="icon icon_facebook"><span>facebook</span></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
