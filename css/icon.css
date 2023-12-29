@@ -1,0 +1,109 @@
+.icon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  font-size: 0;
+  color: transparent;
+  line-height: 0;
+  text-indent: -9999px;
+  vertical-align: middle;
+  background: url("../img/icon_01.png") no-repeat 0 0;
+  display: inline-block;
+  background-size: 1000px 1000px;
+}
+
+.icon_btn {
+  width: 20px;
+  height: 20px;
+  background-position: -40px -933px;
+  vertical-align: top;
+}
+
+.icon_kt {
+  width: 80px;
+  height: 50px;
+  background-position: -475px -900px;
+}
+
+.icon_lg {
+  width: 80px;
+  height: 50px;
+  background-position: -563px -900px;
+}
+
+.icon_youtube {
+  width: 25px;
+  height: 25px;
+  background-position: -500px -190px;
+}
+
+.icon_facebook {
+  width: 25px;
+  height: 25px;
+  background-position: -530px -190px;
+}
+
+.icon_search {
+  width: 35px;
+  height: 35px;
+  background-position: 0 -900px;
+}
+
+.icon_youtube {
+  width: 35px;
+  height: 35px;
+  background-position: -76px -900px;
+}
+
+.icon_facebook {
+  width: 35px;
+  height: 35px;
+  background-position: -116px -900px;
+}
+
+.icon_kt {
+  width: 194px;
+  height: 30px;
+  background-position: -160px -900px;
+}
+
+.icon_lg {
+  width: 194px;
+  height: 30px;
+  background-position: -160px -934px;
+}
+
+.icon_onestore {
+  width: 194px;
+  height: 30px;
+  background-position: -160px -968px;
+}
+
+.icon_btn {
+  width: 30px;
+  height: 30px;
+  background-position: -40px -900px;
+}
+
+.icon_logo {
+  width: 155px;
+  height: 40px;
+  background-position: 0 -169px;
+}
+.icon_arrow{
+  width: 15px;
+  height: 30px;
+  background-position: 0 -80px;
+}
+
+
+
+
+
+/*privacy.html*/
+.header-link .icon_logo {
+  width: 104px;
+  height: 30px;
+  background-position: 0 0;
+}
+

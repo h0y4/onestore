@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cboth:after {
+  clear: both;
+}
+
+.cboth:after,
+.cboth:before {
+  content: "";
+  display: table;
+}
+
+a {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.46;
+  text-decoration: none;
+}
+
+h3 .icon-select-bullet-2 {
+  top: -1px;
+}
+
+p .icon-select-bullet-2 {
+  top: -2px;
+}
+
+.on .icon-select-bullet-2 {
+  transform: rotate(180deg);
+}
+
+/*icon*/
+
+/*header*/
+#wrap {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 70px 0 0 0;
+  max-width: 768px;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 101;
+  top: 0;
+}
+
+.header .header-co {
+  padding: 20px 20px 20px 20px;
+}
+
+.header .header-co .header-co-left {
+  height: 30px;
+}
+
+.header .header-co .header-co-left .header-link {
+  position: relative;
+  padding: 0 0 0 104px;
+  height: 30px;
+  float: none;
+}
+
+.header .header-co .header-co-left .header-link .header-link-home {
+  width: 104px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+.header .header-co .header-co-left .header-link .icon_arrow{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2px 0 0;
+  float: left;
+}
+.header .header-co .header-co-left .header-link span{
+  font-size: 15px;
+  color: #010101;
+  line-height: 30px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 767px) {
+  .reserveheader {
+    left: 50%;
+    margin-left: -384px;
+    width: 768px;
+  }
+}
