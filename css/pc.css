@@ -31,7 +31,9 @@ img {
 div {
   display: block;
 }
-
+body{
+  /*padding-top: 30px;*/
+}
 .icon {
   position: relative;
   width: 15px;
@@ -70,6 +72,135 @@ div {
 .mo_version {
   display: none;
 }
+/*=========nav style*===========*/
+.nav{
+  width: 100%;
+  height: 69px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding:0 53px;
+  min-width: 1100px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  box-sizing: border-box;
+}
+.nav:hover{
+  background-color: #000;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.nav-fixed{
+  background-color: #000;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.nav-menu{
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-menu .main-logo{
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  padding-top: 22px;
+}
+.nav-menu .main-logo .img-logo{
+  width: 171px;
+  height: 31px;
+}
+.img-logo{
+  display: block;
+  overflow: hidden;
+  background:url("../img/navbar-logo.svg") 0 0 no-repeat;
+  text-indent: -9999px;
+}
+.gnb{
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: top;
+}
+.screen_out{
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+}
+.top-menu{
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-inline-start: 40px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.top-menu li{
+  float: left;
+}
+.top-menu li:first-child{
+  padding-left: 60px;
+}
+.top-menu .top-link{
+  color: rgba(255,255,255,0.6);
+  display: block;
+  position: relative;
+  margin-right: 60px;
+  padding: 26px 20px 23px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.sub-menu{
+  padding: 13px 0 0 20px;
+  text-align: left;
+}
+.sub-menu li{
+  float: none;
+  height: auto;
+  padding-right: 0;
+}
+.sub-menu li:first-child{
+  padding-left: 0;
+}
+.sub-menu .sub-link{
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  line-height: 42px;
+  color: rgba(255,255,255,0.6);
+  vertical-align: top;
+}
+.chg-lang{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: left;
+}
+.chg-lang .chg-lang-top{
+  display: block;
+  padding: 24px 0 25px 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+.chg-lang .lang-btn{
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  color: rgba(255,255,255,0.6);
+  vertical-align: top;
+}
 
 /*========header style start========*/
 #wrapper .mainHeader {
@@ -96,6 +227,7 @@ div {
 
 .mainHeader .header_co .logo_left {
   height: 40px;
+  padding-top: 50px;
 }
 
 .mainHeader .header_co .logo_left .header_link {
@@ -124,6 +256,7 @@ div {
   position: absolute;
   right: 0;
   top: 3px;
+  padding-top: 50px;
 }
 
 .mainHeader .header_co .search_right a {
