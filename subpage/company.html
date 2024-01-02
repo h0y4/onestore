@@ -10,20 +10,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="../js/company.js"></script>
   <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <!--  <link rel="stylesheet" href="../css/slick.css">-->
+
 
 </head>
 <body>
 <div id="wrap">
-  <div class="navi" id="nav">
+  <!--mb-->
+  <nav class="navbar navbar-dark fixed-top on" id="nav-m" style="padding: 0; margin: 0;">
+    <h1 class="main-logo" style="position: absolute; z-index: 10; left: 0; top: 0; padding-top: 22px;padding-left: 28px;">
+      <a href="#" class="img-logo" style="width: 171px; height: 31px;">one store</a>
+    </h1>
+    <span class="navbar-toggler-icon" style="opacity: 0;"></span>
+    <button class="navbar-toggler-icon" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" style="text-align: right; width: 39px; height: 39px; margin: 15px 28px 15px 15px;border: none; outline: none; cursor: pointer;"></button>
+  </nav>
+  <!--pc-->
+  <div class="navi fixed-top" id="nav">
     <div class="nav-menu">
       <h1 class="main-logo">
-        <a href="#" class="img-logo">one store</a>
+        <a href="#" class="img-logo navbar-brand">one store</a>
       </h1>
-      <div class="gnb">
+      <div class="gnb" id="navbarNavDropdown">
         <h2 class="screen_out">원스토어 메인메뉴</h2>
         <ul class="top-menu">
           <li>
-            <a href="" class="top-link">메인페이지</a>
+            <a href="" class="top-link">우리는</a>
             <ul class="sub-menu">
               <li><a href="#" class="sub-link">회사소개</a></li>
               <li><a href="#" class="sub-link">원스토어</a></li>
@@ -31,19 +43,23 @@
             </ul>
           </li>
           <li>
-            <a href="" class="top-link">개발자센터</a>
+            <a href="" class="top-link">열려있는</a>
             <ul class="sub-menu">
-              <li><a href="#" class="sub-link">동해물과</a></li>
-              <li><a href="#" class="sub-link">벡두산이</a></li>
-              <li><a href="#" class="sub-link">마르고</a></li>
+              <li><a href="#" class="sub-link">보도자료</a></li>
+              <li><a href="#" class="sub-link">광고/SNS</a></li>
+              <li><a href="#" class="sub-link">원스토어 사람들</a></li>
+              <li><a href="#" class="sub-link">원스토어 복지</a></li>
+              <li><a href="#" class="sub-link">채용공고</a></li>
+              <li><a href="#" class="sub-link">투자정보</a></li>
             </ul>
           </li>
           <li>
-            <a href="" class="top-link">회사소개</a>
+            <a href="" class="top-link">함께하는</a>
             <ul class="sub-menu">
-              <li><a href="#" class="sub-link">닳도록</a></li>
-              <li><a href="#" class="sub-link">하느님이</a></li>
-              <li><a href="#" class="sub-link">보우하사</a></li>
+              <li><a href="#" class="sub-link">사회공헌</a></li>
+              <li><a href="#" class="sub-link">친화정책</a></li>
+              <li><a href="#" class="sub-link">개발자 지원</a></li>
+              <li><a href="#" class="sub-link">원스토어 글꼴</a></li>
             </ul>
           </li>
         </ul>
@@ -88,25 +104,25 @@
   <section class="bg-white pt-lg-5 pb-lg-2 pt-5 pb-2" style="padding-left: 6vw; padding-right: 6vw;">
     <div class="row sumpress">
       <div class="col-md-4 box-cell px-2">
-        <div class="mx-1 px-4 py-4 py-2" style="border-radius: 1rem; box-shadow: none;">
+        <div class="mx-1 px-4 py-4 py-2 box-ani" style="border-radius: 1rem; box-shadow: none;">
           <a href="#" style="text-decoration: none;">
-            <h5>원스토어, ‘서머너즈 워: 크로니클’ 런칭 기념 캠페인 공개</h5>
+            <h5 class="cs-h5-text">원스토어, ‘서머너즈 워: 크로니클’ 런칭 기념 캠페인 공개</h5>
             <p style="color:rgba(0,0,0,0.4);">2022-08-09</p>
           </a>
         </div>
       </div>
       <div class="col-md-4 box-cell px-2">
-        <div class="mx-1 px-4 py-4 py-2" style="border-radius: 1rem; box-shadow: none;">
+        <div class="mx-1 px-4 py-4 py-2 box-ani" style="border-radius: 1rem; box-shadow: none;">
           <a href="#" style="text-decoration: none;">
-            <h5>원스토어, 중기부 '대-스타 해겨살 플랫폼' 경진대회 통해 스타트업 지원 나선다</h5>
+            <h5 class="cs-h5-text">원스토어, 중기부 '대-스타 해겨살 플랫폼' 경진대회 통해 스타트업 지원 나선다</h5>
             <p style="color:rgba(0,0,0,0.4);">2022-07-20</p>
           </a>
         </div>
       </div>
       <div class="col-md-4 box-cell px-2">
-        <div class="mx-1 px-4 py-4 py-2" style="border-radius: 1rem; box-shadow: none;">
+        <div class="mx-1 px-4 py-4 py-2 box-ani" style="border-radius: 1rem; box-shadow: none;">
           <a href="#" style="text-decoration: none;">
-            <h5>원스토어, 휴가철 맞아 쓸수록 혜택 커지는 '겜캉스' 이벤트 실시</h5>
+            <h5 class="cs-h5-text">원스토어, 휴가철 맞아 쓸수록 혜택 커지는 '겜캉스' 이벤트 실시</h5>
             <p style="color:rgba(0,0,0,0.4);">2022-07-07</p>
           </a>
         </div>
@@ -123,10 +139,10 @@
       <div class="container-fluid lift overlayindex" style="background: url('../img/07.jpg') center; background-size: cover;  box-shadow: none; border-radius: 1.5rem;">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 col-lg-6 order-1 order-lg-0 py-5 py-lg-15 pl-0 pl-lg-3">
-            <h2 class="text-white">더 쏠쏠하게
+            <h2 class="text-white cs-text">더 쏠쏠하게
               앱하다<img src="../img/title_arrow_white_01.svg" class="arrow-white2" alt="" style="margin-left: 5px; margin-bottom: 4px;">
             </h2>
-            <p class="text-white indexcont">
+            <p class="text-white indexcont cs-p-text">
               멀었습니다. 좀 더 윤택한 모바일 생활을 위한 원스토어의 고민은
             </p>
           </div>
@@ -139,10 +155,10 @@
       <div class="container-fluid lift overlayindex" style="background: url('../img/header_forall_new.jpg') center; background-size: cover;  box-shadow: none; border-radius: 1.5rem;">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 col-lg-6 order-1 order-lg-0 py-5 py-lg-15 pl-0 pl-lg-3">
-            <h2 class="text-white">더 함께
+            <h2 class="text-white cs-text">더 함께
               앱하다<img src="../img/title_arrow_white_01.svg" class="arrow-white2" alt="" style="margin-left: 5px; margin-bottom: 4px;">
             </h2>
-            <p class="text-white indexcont">
+            <p class="text-white indexcont cs-p-text">
               아직 남아 있습니다. 원스토어가 앱생태계를 위해 해야 할 일이
             </p>
           </div>
@@ -155,11 +171,11 @@
       <div class="container-fluid lift overlayindex" style="background: url('../img/header_ost_new.png') center; background-size: cover;  box-shadow: none; border-radius: 1.5rem;">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 col-lg-6 order-1 order-lg-0 py-5 py-lg-15 pl-0 pl-lg-3">
-            <h2 class="text-white">더 쏠쏠하게
-              앱하다<img src="../img/title_arrow_white_01.svg" class="arrow-white2" alt="" style="margin-left: 5px; margin-bottom: 4px;">
+            <h2 class="text-white cs-text">더 재미있게 앱하다
+              <img src="../img/title_arrow_white_01.svg" class="arrow-white2" alt="" style="margin-left: 5px; margin-bottom: 4px;">
             </h2>
-            <p class="text-white indexcont">
-              멀었습니다. 좀 더 윤택한 모바일 생활을 위한 원스토어의 고민은
+            <p class="text-white indexcont cs-p-text">
+              아직 채워지지 않았습니다. 우리가 써내려가야 하는 스토리가
             </p>
           </div>
         </div>
@@ -171,11 +187,11 @@
       <div class="container-fluid lift overlayindex" style="background: url('../img/gsj_new.jpg') center; background-size: cover;  box-shadow: none; border-radius: 1.5rem;">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 col-lg-6 order-1 order-lg-0 py-5 py-lg-15 pl-0 pl-lg-3">
-            <h2 class="text-white">더 쏠쏠하게
+            <h2 class="text-white cs-text">원스토어를 이야기하다
               앱하다<img src="../img/title_arrow_white_01.svg" class="arrow-white2" alt="" style="margin-left: 5px; margin-bottom: 4px;">
             </h2>
-            <p class="text-white indexcont">
-              멀었습니다. 좀 더 윤택한 모바일 생활을 위한 원스토어의 고민은
+            <p class="text-white indexcont cs-p-text">
+              아직도 꿈꾸고 있습니다. 다 같이 행복한 회사를
             </p>
           </div>
         </div>
@@ -186,19 +202,36 @@
     <div class="container-fluid px-lg-4 px-0">
       <div class="row justify-content-center">
         <a href="#">
-          <h1 class="mb-4">원스토어를 즐기다</h1>
+          <h1 class="mb-4 cs-h1-text">원스토어를 즐기다</h1>
         </a>
       </div>
+      <!--slick-->
       <div class="regular slider slick-slider">
-        <img src="../img/arrow_black_02.svg" alt="" class="a-left slick-prev" style="width: 30px; height: 30px; top:40%;">
+        <img src="../img/arrow_black_02.svg" alt="" type="button" class="carousel-control-prev a-left slick-prev" style="width: 30px; height: 30px; top:40%;">
         <div class="slick-list draggable">
-          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
-            <div class="slick-slide" style="width: 263px;">
+          <div class="slick-track" style="opacity: 1; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide" data-slick-index="1" aria-hidden="false">
               <div>
                 <div style="width: 100%; display: inline-block;">
                   <a href="#" class="card card-portfolio h-100">
                     <figure>
-                      <img src="../img/hqdefault.jpg" alt="" class="card-img-top">
+                      <img src="../company/hqdefault%20(5).jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-track" style="opacity: 1; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../company/hqdefault%20(6).jpg" alt="" class="card-img-top">
                     </figure>
                     <div class="card-body">
                       <div class="card-title long-item">youtube1</div>
@@ -209,12 +242,12 @@
             </div>
           </div>
           <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
-            <div class="slick-slide" style="width: 263px;">
+            <div class="slick-slide">
               <div>
                 <div style="width: 100%; display: inline-block;">
                   <a href="#" class="card card-portfolio h-100">
                     <figure>
-                      <img src="../img/hqdefault%20(1).jpg" alt="" class="card-img-top">
+                      <img src="../company/hqdefault%20(3).jpg" alt="" class="card-img-top">
                     </figure>
                     <div class="card-body">
                       <div class="card-title long-item">youtube1</div>
@@ -225,7 +258,7 @@
             </div>
           </div>
           <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
-            <div class="slick-slide" style="width: 263px;">
+            <div class="slick-slide">
               <div>
                 <div style="width: 100%; display: inline-block;">
                   <a href="#" class="card card-portfolio h-100">
@@ -241,7 +274,39 @@
             </div>
           </div>
           <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
-            <div class="slick-slide" style="width: 263px;">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../img/hqdefault.jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../img/hqdefault%20(1).jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
               <div>
                 <div style="width: 100%; display: inline-block;">
                   <a href="#" class="card card-portfolio h-100">
@@ -256,13 +321,78 @@
               </div>
             </div>
           </div>
+          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../company/hqdefault%20(4).jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../company/hqdefault.jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../company/hqdefault%20(1).jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-track" style="opacity: 1;width: 153952px; transform: translate3d(0px,0px,0px);">
+            <div class="slick-slide">
+              <div>
+                <div style="width: 100%; display: inline-block;">
+                  <a href="#" class="card card-portfolio h-100">
+                    <figure>
+                      <img src="../company/hqdefault%20(2).jpg" alt="" class="card-img-top">
+                    </figure>
+                    <div class="card-body">
+                      <div class="card-title long-item">youtube1</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="../img/arrow_black_01.svg" alt="" class="a-right slick-next" style="width: 30px; height: 30px; top:40%;">
+        <img src="../img/arrow_black_01.svg" alt="" class="carousel-control-next a-right slick-next" style="width: 30px; height: 30px; top:40%;" type="button">
       </div>
     </div>
   </section>
 </div>
-<section class="footer px-2 pt-5 pb-5 mt-auto bg-white footer-light">
+<!--footer-->
+<section class="footer px-2 pt-5 pb-5 mt-auto bg-white footer-light text-sm-center text-md-center text-lg-left">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-4 px-0 pl-lg-4">
@@ -274,32 +404,32 @@
           <a href=""><img src="../img/ic_youtube.svg" alt="" style="height: 30px;" class="mr-2"></a>
           <a href=""><img src="../img/ic_linkedin.svg" alt="" style="height: 30px;" class="mr-2"></a>
         </div>
-        <div class="small px-0 pt-5" style="text-align: left">
+        <div class="small px-0 pt-5 text-sm-left" style="text-align: left">
           Copyright © One store Co., Ltd. 202
           <a href="" style="color: #a7aeb8;" class="small cs-m">1</a>
         </div>
       </div>
       <div class="col-lg-8 px-0">
-        <div class="row justify-content-end">
+        <div class="row justify-content-start">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <div class="text-uppercase mb-4 text-xs">책임경영</div>
-              <ul class="mb-0 list-unstyled">
-                <li class="mb-2">
-                  <a href="#">이용자보호의지</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#">고객중심경영</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#">자율준수경영</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#">SK윤리경영 상담/제보</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#">윤리규정</a>
-                </li>
-              </ul>
+            <ul class="mb-0 list-unstyled">
+              <li class="mb-2">
+                <a href="#">이용자보호의지</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">고객중심경영</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">자율준수경영</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">SK윤리경영 상담/제보</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">윤리규정</a>
+              </li>
+            </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <div class="text-uppercase mb-4 text-xs">약관센터</div>
