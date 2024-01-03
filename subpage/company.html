@@ -27,6 +27,7 @@
   </nav>
   <!--pc-->
   <div class="navi fixed-top" id="nav">
+    <div class="cs-border"></div>
     <div class="nav-menu">
       <h1 class="main-logo">
         <a href="#" class="img-logo navbar-brand">one store</a>
@@ -82,13 +83,18 @@
           <div class="col-lg-12">
             <h1 CLASS="header-title" style="text-align: center">더 쏠쏠하게 앱하다</h1>
             <a href="#" class="text-center border-none">
-              <div class="h5" data-toggle="modal" data-target="#videoModal" id="link" style="color: rgba(255,255,255,0.9)">
+              <div class="h5" data-toggle="modal" data-target="#videoModal" id="link" style="color: rgba(255,255,255,0.8)">
                 광고보기
-                <div id="videoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
+                <div id="videoModal" class="modal fade cs-bg" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden=true>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span style="width: 50px" aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="modal-dialog cs-modal modal-dialog-centered">
                     <div class="modal-content">
-                      <div class="modal-body">
-                        <iframe width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                      <div class="modal-body" style="padding: 0; flex:none;">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eIG4nIsfrmE?si=QH4n76dARk0s6r6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -394,7 +400,7 @@
 <!--footer-->
 <section class="footer px-2 pt-5 pb-5 mt-auto bg-white footer-light text-sm-center text-md-center text-lg-left">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row pl-lg-5">
       <div class="col-lg-4 px-0 pl-lg-4">
         <div class="footer-brand mb-3">
           <img src="../img/ci_light_new.svg" alt="" style="width: 230px;">
@@ -410,7 +416,7 @@
         </div>
       </div>
       <div class="col-lg-8 px-0">
-        <div class="row justify-content-start">
+        <div class="row justify-content-center">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <div class="text-uppercase mb-4 text-xs">책임경영</div>
             <ul class="mb-0 list-unstyled">

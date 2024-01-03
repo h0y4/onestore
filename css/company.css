@@ -21,6 +21,12 @@ section {
   transition: all 0.5s;
 }
 
+.cs-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .navi {
   width: 100%;
   height: 69px;
@@ -36,10 +42,38 @@ section {
   transition: all 0.5s;
 }
 
+.cs-border {
+  width: 100%;
+  height: 69px;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+}
+
+.close {
+  font-size: 2rem;
+  font-weight: 1000;
+  opacity: 1;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  opacity: 1;
+}
+
 .nav-fixed {
   background-color: #000;
   opacity: 0.8;
   transition: all 0.5s;
+}
+
+.cs-modal {
+  max-width: 1100px;
+  /*top: 350px;*/
 }
 
 .nav-menu {
@@ -437,18 +471,21 @@ figure {
 .list-unstyled li {
   color: #5e646b;
 }
+
 /*모바일 상단 네비*/
-#nav-m.on{
+#nav-m.on {
   background-color: #000;
   opacity: 0.9;
   border-bottom: 1px solid #2f2f2f;
   border-top: 1px solid #2f2f2f;
 }
-.navbar-dark .navbar-toggler-icon{
+
+.navbar-dark .navbar-toggler-icon {
   background: url("../company/menu_01.svg");
   transform: rotate(0deg);
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
   background: no-repeat center center;
   background-size: 100% 100%;
   transition: all 0.3s ease;
@@ -459,7 +496,8 @@ figure {
   .container {
     max-width: 1140px;
   }
-  #nav{
+
+  #nav {
     display: block;
   }
 }
@@ -488,6 +526,7 @@ figure {
   .cs-h5-text {
     font-size: 1.1rem;
   }
+
   #nav {
     display: none;
   }
@@ -497,9 +536,11 @@ figure {
   .pt-lg-20, .py-lg-20 {
     padding-top: 12rem !important;
   }
-  #nav-m{
+
+  #nav-m {
     display: none;
   }
+
   .card-portfolio .card-body {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
