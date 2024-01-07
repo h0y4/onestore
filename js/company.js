@@ -22,14 +22,34 @@ $(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    nextArrow:$('.slick-next'),
-    prevArrow:$('.slick-prev'),
+    nextArrow: $('.slick-next'),
+    prevArrow: $('.slick-prev'),
   });
 
-  $('#videoModal').mousedown(function (){
-    // $('#element').off('scroll touchmove mousewheel');
-    $('.modal').css("overflow","visible");
+  $('#videoModal').on('shown.bs.modal', function (event) {
+    $('body,html').css('overflow-y', 'scroll');
+    $('body').addClass('scroll')
+    $('.modal-open').css('padding', 0);
+  });
+
+  $('#videoModal').on('hidden.bs.modal', function (event) {
+    $('body,html').css('overflow', 'auto');
+    $('body').removeClass('scroll')
+  });
+
+  $('#toggle-btn').click(function () {
+    $('#toggle-btn2').css('opacity', 1);
+    $('#toggle-btn').addClass("active");
+    $('#toggle-btn2').removeClass("active");
+    $('#m-nav').addClass("cs-d-block");
+  });
+  $('#toggle-btn2').click(function () {
+    $('#toggle-btn2').addClass("active");
+    $('#toggle-btn2').css('opacity', 0);
+    $('#toggle-btn').removeClass("active");
+    $('#m-nav').removeClass("cs-d-block");
   })
+  
 
 })
 
