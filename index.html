@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>원스토어</title>
   <link rel="icon" href="img/favicon.ico" type="img/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/pc.css">
   <link rel="stylesheet" href="css/icon.css">
   <link rel="stylesheet" href="css/animation.css">
@@ -15,7 +16,29 @@
 <body>
 <div id="wrapper">
   <!--nav-->
-  <div class="nav" id="nav">
+  <nav class="navbar navbar-dark fixed-top on" id="nav-m" style="padding: 0; margin: 0;">
+    <h1 class="main-logo" style="position: relative; z-index: 10; left: 0; top: 0;padding-top: 22px; padding-bottom:8px; padding-left: 28px;">
+      <a href="#" class="img-logo" style="width: 171px; height: 31px;">one store</a>
+    </h1>
+    <button id="toggle-btn" class="navbar-toggler-icon" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" style="text-align: right; width: 39px; height: 39px; margin: 15px 28px 15px 15px;border: none; outline: none; cursor: pointer;"></button>
+    <button id="toggle-btn2" class="navbar-X-icon" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" style="text-align: right; width: 39px; height: 39px; margin: 15px 28px 15px 15px;border: none; outline: none; cursor: pointer;"></button>
+    <div class="navbar-collapse pl-4" id="m-nav" style="position: relative">
+      <table class="mb-3">
+        <tbody>
+        <tr>
+          <td class="" style="cursor: pointer; width: 150px; color: rgba(255,255,255,0.3)">원스토어</td>
+          <td class="px-0 py-0" style="width: 200px; text-align: left">
+            <a href="" class="sub-link pt-1 w-100">메인페이지</a>
+            <a href="" class="sub-link pt-1 w-100">개발자센터</a>
+            <a href="" class="sub-link pt-1 w-100">회사소개</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </nav>
+
+  <div class="nav1" id="nav">
     <div class="nav-menu">
       <h1 class="main-logo">
         <a href="#" class="img-logo">one store</a>
