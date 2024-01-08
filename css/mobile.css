@@ -12,6 +12,104 @@
     background-position: -563px -900px;
   }
 
+  .nav1 {
+    display: none;
+  }
+
+  #nav-m {
+    display: block;
+  }
+
+  #nav-m.on {
+    background-color: #000;
+    opacity: 0.9;
+    border-bottom: 1px solid #2f2f2f;
+    border-top: 1px solid #2f2f2f;
+  }
+
+  .cs-d-block {
+    height: 140px !important;
+    opacity: 1 !important;
+    transition: all 0.5s;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  table .sub-link {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.6);
+    vertical-align: top;
+  }
+
+  #m-nav {
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  #nav-m.on {
+    background-color: #000;
+    opacity: 0.9;
+    border-bottom: 1px solid #2f2f2f;
+    border-top: 1px solid #2f2f2f;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    background: url("../company/menu_01.svg");
+  }
+
+  #toggle-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #toggle-btn2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar-toggler-icon {
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+    z-index: 20;
+  }
+
+  .navbar-toggler-icon.active {
+    transform: rotate(90deg);
+    opacity: 0;
+    z-index: 17;
+  }
+
+  .navbar-dark .navbar-X-icon {
+    background: url("../company/menu_02.svg");
+  }
+
+  .cs-border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .navbar-X-icon {
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+    position: absolute;
+    opacity: 0;
+    z-index: 19;
+  }
+
+  .navbar-X-icon.active {
+    transform: rotate(-90deg);
+    opacity: 0;
+    z-index: 18;
+  }
+
   .icon_kt {
     width: 80px;
     height: 50px;

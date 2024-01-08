@@ -11,5 +11,17 @@ $(function () {
       nav.removeClass("nav-fixed")
     }
   })
-  
+  $('#toggle-btn').click(function () {
+    $('#toggle-btn2').css('opacity', 1);
+    $('#toggle-btn').addClass("active");
+    $('#toggle-btn2').removeClass("active");
+    $('#m-nav').addClass("cs-d-block");
+  });
+  $('#toggle-btn2').click(function () {
+    $('#toggle-btn2').addClass("active");
+    $('#toggle-btn2').css('opacity', 0);
+    $('#toggle-btn').removeClass("active");
+    $('#m-nav').removeClass("cs-d-block");
+  })
+
 })
