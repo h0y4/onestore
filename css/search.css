@@ -25,6 +25,26 @@ button {
   border: none;
 }
 
+.swiper-container{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .search-list {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .pt-30 {
   padding-top: 30px !important;
@@ -155,9 +175,7 @@ button {
 .header-co .header-search .search-input input::placeholder{
   color:#ffffff;
 }
-.header-co .header-search .search-input input::placeholder{
 
-}
 input[type="text" i] {
   writing-mode: horizontal-tb !important;
   padding-block: 1px;
@@ -231,6 +249,7 @@ input[type="text" i] {
   position: relative;
   transition-property: transform;
   display: block;
+  text-align: left;
 }
 
 .todaysearch-wrap .search-sub {
@@ -245,7 +264,6 @@ input[type="text" i] {
   color: #111111;
   line-height: 23px;
 }
-
 .todaysearch-wrap .search-sub .search-ti span {
   font-size: 17px;
   color: #000000;
@@ -323,10 +341,14 @@ input[type="text" i] {
   text-align: right;
   border-top: 1px solid #e6e6e8;
 }
-.todaysearch-wrap .search-sub .search-list .search-more a{
+.todaysearch-wrap .search-sub .search-list .search-more span{
   font-size: 14px;
   color: #3e3877;
   line-height: 25px;
+  cursor: pointer;
+}
+.js-search-more2{
+  display: none;
 }
 @media (min-width: 767px) {
   .webviewheader, .helpheader, .landingheader, .detailheader, .reserveheader, .searchheader, .mwtextheader {
