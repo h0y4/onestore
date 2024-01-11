@@ -350,6 +350,7 @@ input[type="text" i] {
 .js-search-more2{
   display: none;
 }
+
 @media (min-width: 767px) {
   .webviewheader, .helpheader, .landingheader, .detailheader, .reserveheader, .searchheader, .mwtextheader {
     left: 50%;
