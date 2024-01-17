@@ -1,0 +1,29 @@
+[
+  {"id":1,
+  "firstname":"태희",
+  "lastname":"김",
+  "age":24,
+  "personalColor":"blue"
+  },
+  {"id":2,
+  "firstname":"우성",
+  "lastname":"정",
+  "age":40,
+  "personalColor":"brown",
+  "hobbies": ["travel"]
+  },
+  {"id":3,
+  "firstname":"강호",
+  "lastname":"송",
+  "age":30,
+  "personalColor":"pink",
+  "hobbies":["game","soccer"]
+  },
+  {"id":4,
+  "firstname":"해진",
+  "lastname":"유",
+  "age":11,
+  "personalColor":"gold",
+  "hobbies":["watchingMovie","golf"]
+  }
+]
