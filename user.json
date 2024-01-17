@@ -7,16 +7,19 @@
   {"id":2,
   "name":"박목성",
   "age":40,
-  "personalColor":"brown"
+  "personalColor":"brown",
+  "hobbies": ["travel"]
   },
   {"id":3,
   "name":"최토성",
   "age":30,
-  "personalColor":"pink"
+  "personalColor":"pink",
+  "hobbies":["game","soccer"]
   },
   {"id":4,
   "name":"남금성",
   "age":11,
-  "personalColor":"gold"
+  "personalColor":"gold",
+  "hobbies":["watchingMovie","golf"]
   }
 ]
