@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
 }
-
+.no-active{
+  cursor: no-drop;
+}
 .nav-fixed {
   background-color: rgba(24, 24, 24, 0.7) !important;
   backdrop-filter: blur(15px);
@@ -59,7 +61,7 @@
   background-size: 500px 500px;
 }
 
-.icon {
+.cont-inner .icon {
   width: 251px;
   height: 28px;
   font-size: 0;
@@ -293,6 +295,7 @@ header .cont-inner .gnb .lang-menu li {
 header .cont-inner .gnb .main-menu li a:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border-radius: 10px;
+
 }
 
 header .cont-inner .gnb .lang-menu > li > a {
@@ -367,15 +370,18 @@ header .cont-inner .gnb .main-menu li .submenu ul li {
 header .cont-inner .gnb .main-menu li .submenu ul li:hover {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  cursor: no-drop;
 }
 
 header .cont-inner .gnb .main-menu li .submenu ul li a:hover {
   font-weight: bold;
+  cursor: no-drop;
 }
 
 header .cont-inner .gnb .lang-menu li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  cursor: no-drop;
 }
 
 header .cont-inner .gnb .lang-menu .choice-lang ul li a {
@@ -541,6 +547,7 @@ header .cont-inner .gnb .lang-menu .choice-lang ul li:first-child {
 
 .main-section .main-inner .ms-btn a:hover {
   background: rgba(255, 255, 255, 0.2);
+  cursor: no-drop;
 }
 
 .ms-btn a:first-child {

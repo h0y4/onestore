@@ -16,10 +16,10 @@ $(function () {
   $('.subhover').mouseout(function () {
     $('.submenu').removeClass('dp-block')
   })
-  $('.lang-menu').mouseover(function () {
+  $('.lang-menu li:first-child').mouseover(function () {
     $('.choice-lang').addClass('dp-block')
   })
-  $('.lang-menu').mouseout(function () {
+  $('.lang-menu li:first-child').mouseout(function () {
     $('.choice-lang').removeClass('dp-block')
   })
 
@@ -30,6 +30,9 @@ $(function () {
   $('.choice-lang ul li:last-child a').on('mouseover', function () {
     $('.choice-lang ul li:last-child a').addClass('select-color')
     $('.choice-lang ul li:first-child a').removeClass('select-color')
+    $('.choice-lang ul li:last-child a').on('mouseleave',function (){
+      $('.choice-lang ul li:last-child a').removeClass('select-color')
+      $('.choice-lang ul li:first-child a').addClass('select-color')
+    })
   })
-
 })

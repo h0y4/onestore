@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
 }
-
+.no-active{
+  cursor: no-drop;
+}
 .nav-fixed {
   background-color: rgba(24, 24, 24, 0.7) !important;
   backdrop-filter: blur(15px);
