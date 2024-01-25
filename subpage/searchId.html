@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>아이디 찾기</title>
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="../img/developers/favicon.png">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/developers.css">
+<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/login.js"></script>
+
+<script src="../js/bootstrap.bundle.js"></script>
+<body>
+
+<section class="content">
+   <form action="./searchId.do" name="searchId" method="post">
+      <div class="search-wrap middle">
+         <h2>아이디/비밀번호 찾기</h2>
+         <ul class="ui tab tab-2">
+            <li class="on" style="cursor: no-drop"><a href="searchId.jsp" style="cursor: no-drop">아이디 찾기</a></li>
+            <li><a href="searchPw.html">비밀번호 찾기</a></li>
+         </ul>
+         <div class="search-info">
+            <div class="search-text">
+               <h3>아이디와 휴대폰 번호로 찾기</h3>
+               <p>회원가입 시 입력한 아이디와 휴대폰 번호로 비밀번호 찾기가 가능합니다.</p>
+            </div>
+         </div>
+         <div>
+            <table class="p-r">
+               <tbody>
+               <tr class="cs-input-group">
+                  <th class="label"><label for="" class="eseen">이름</label></th>
+                  <td>
+                     <div class="check-area">
+                        <span class="full-input">
+                           <input type="text" name="osName">
+                        </span>
+                     </div>
+                  </td>
+               </tr>
+
+               <tr class="cs-input-group">
+                  <th class="label"><label for="" class="eseen">휴대폰 번호</label></th>
+                  <td>
+                     <div class="check-area">
+                        <span class="input-style">
+                           <select name="" id="">
+                              <option value="">SKT</option>
+                              <option value="">KT</option>
+                              <option value="">U+</option>
+                              <option value="">알뜰폰</option>
+                           </select>
+                           <input type="text" name="osPhone1" style="width: 10%" maxlength="3">&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" name="osPhone2" style="width: 10%" maxlength="4">&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" name="osPhone3" style="width: 10%" maxlength="4">
+                        </span>
+                     </div>
+                  </td>
+               </tr>
+
+               <tr class="cs-input-group">
+                  <th class="label"><label for="" class="eseen">이메일</label></th>
+                  <td>
+                     <div class="check-area">
+                        <span class="input-style">
+                           <input type="text" name="osEmail1" style="width: 25%"><span style="width: 4%;">&nbsp;@&nbsp;</span><input type="text" name="osEmail2" style="width: 40%">
+                        </span><br>
+                     </div>
+                  </td>
+               </tr>
+
+               </tbody>
+            </table>
+            <div class="search-qa mt40">
+               <i class="icon-set icon-info"></i>
+               문의가 필요하신 경우 <a href="#" class="underLine">rodrkddj@naver.com</a>로 문의해 주세요.
+            </div>
+            <div class="member-button">
+               <button type="button" class="bt-red" onclick="subId()">아이디 찾기</button>
+            </div>
+         </div>
+      </div>
+   </form>
+</section>
+<script>
+    function subId() {
+        if (!document.searchId.osName.value) {
+            alert("이름을 입력해주세요")
+            return false;
+        }
+        if (!document.searchId.osPhone1.value) {
+            alert("휴대폰번호를 입력해주세요")
+            return false;
+        }
+        if (!document.searchId.osPhone2.value) {
+            alert("휴대폰번호를 입력해주세요")
+            return false;
+        }
+        if (!document.searchId.osPhone3.value) {
+            alert("휴대폰번호를 입력해주세요")
+            return false;
+        }
+        if (!document.searchId.osEmail1.value) {
+            alert("이메일을 입력해주세요")
+            return false;
+        }
+        if (!document.searchId.osEmail2.value) {
+            alert("이메일을 입력해주세요")
+            return false;
+        }
+        document.searchId.submit()
+    }
+</script>
+
+</body>
+</html>

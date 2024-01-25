@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>로그인</title>
+   <link rel="shortcut icon" type="image/x-icon" href="../img/developers/favicon.png">
+   <link rel="stylesheet" href="../css/bootstrap.css">
+   <link rel="stylesheet" href="../css/developers.css">
+   <link rel="stylesheet" href="../css/login.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="black" id="nav">
+   <div class="cont-inner">
+	  <h1>
+		 <a href="./developers.html"><span class="icon">span</span></a>
+	  </h1>
+	  <div class="gnb">
+		 <ul class="main-menu">
+			<li class="subhover"><a href="" class="no-active">Apps</a>
+			   <div class="submenu">
+				  <ul>
+					 <li><a href="" class="no-active">상품현황</a></li>
+					 <li><a href="" class="no-active">정산</a></li>
+					 <li><a href="" class="no-active">고객관리</a></li>
+					 <li><a href="" class="no-active">통계</a></li>
+					 <li><a href="" class="no-active">설정</a></li>
+				  </ul>
+			   </div>
+			</li>
+			<li><a href="" class="no-active">Support</a></li>
+			<li><a href="./notice.html">Notice</a></li>
+		 </ul>
+		 <ul class="lang-menu">
+			<li>
+			   <a href="" class="no-active"><span class="icon">언어선택</span></a>
+			   <div class="choice-lang">
+				  <ul>
+					 <li><a href="" class="select-color no-active">한국어</a></li>
+					 <li><a href="" class="no-active">English</a></li>
+				  </ul>
+			   </div>
+			</li>
+			<li class="login-before"><a href="./login.html" style="cursor: pointer">로그인</a></li>
+		 </ul>
+	  </div>
+   </div>
+</header>
+<section class="content">
+   <form action="./login.do" method="post" name="checkLogin">
+	  <div class="login-wrap login-area dp-flex">
+		 <div class="login-inner">
+			<h2>로그인</h2>
+			<div class="login-form">
+			   <div class="cs-input-group">
+				  <div class="input">
+					 <i class="icon-set icon-error dp-none"></i>
+					 <input type="text" name="osId" placeholder="개발자센터 아이디">
+					 <i class="icon-set icon-login1"></i>
+				  </div>
+			   </div>
+			   <div class="cs-input-group">
+				  <div class="input">
+					 <i class="icon-set icon-error dp-none"></i>
+					 <input type="password" name="osPw" placeholder="비밀번호">
+					 <i class="icon-set icon-login2"></i>
+				  </div>
+			   </div>
+			   <div class="check-form">
+				  <input type="checkbox" id="id-save">
+				  <label for="id-save" class="save-id">아이디 저장</label>
+			   </div>
+			   <button type="button" class="cs-btn bt-red" onclick="checkLog()">로그인</button>
+			</div>
+			<ul class="login-list">
+			   <li><a href="./loginCheck.html">회원가입</a></li>
+			   <li><a href="./searchId.html">아이디 찾기</a></li>
+			   <li><a href="./searchPw.html">비밀번호 찾기</a></li>
+			</ul>
+		 </div>
+	  </div>
+   </form>
+</section>
+<script>
+    function checkLog() {
+        if (!document.checkLogin.osId.value) {
+            alert("아이디를 입력해주세요")
+            return false;
+        }
+        if (!document.checkLogin.osPw.value) {
+            alert("비밀번호를 입력해주세요")
+            return false;
+        }
+        document.checkLogin.submit();
+    }
+</script>
+<footer>
+   <div class="footer-top">
+	  <div class="footer-inner">
+		 <ul>
+			<li><a href="" class="no-active link">개발자센터소개</a></li>
+			<li><a href="" class="no-active link-bold">개인정보 처리방침</a></li>
+			<li><a href="" class="no-active link">이용약관</a></li>
+			<li><a href="" class="no-active link">지식재산권 보호센터</a></li>
+			<li><a href="" class="no-active link">무료법률지원</a></li>
+		 </ul>
+	  </div>
+   </div>
+</footer>
+</body>
+</html>

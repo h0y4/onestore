@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>비밀번호 찾기</title>
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="../img/developers/favicon.png">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/developers.css">
+<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<body>
+
+<section class="content">
+   <form action="./searchPw.do" name="searchPw" method="post">
+      <div class="search-wrap middle">
+         <h2>아이디/비밀번호 찾기</h2>
+         <ul class="ui tab tab-2">
+            <li><a href="searchId.html">아이디 찾기</a></li>
+            <li class="on" style="cursor: no-drop"><a href="searchPw.html" style="cursor: no-drop">비밀번호 찾기</a></li>
+         </ul>
+         <div class="search-info">
+            <div class="search-text">
+               <h3>질문과 답변으로 찾기</h3>
+               <p>회원가입 시 입력한 질문과 답변으로 아이디 찾기가 가능합니다.</p>
+            </div>
+         </div>
+         <div>
+            <table class="p-r">
+               <tbody>
+               <tr class="cs-input-group">
+                  <th class="label"><label for="" class="eseen">아이디</label></th>
+                  <td>
+                     <div class="check-area">
+                        <span class="full-input">
+                           <input type="text" name="osId" id="osId">
+                        </span>
+
+                     </div>
+                  </td>
+               </tr>
+               <tr class="cs-input-group">
+                  <th class="label"><label for="qa" class="eseen">보안질문</label></th>
+                  <td>
+                     <div class="check-area">
+                        <span class="full-input">
+                           <select name="osQa" id="qa">
+                              <option>선택</option>
+                              <option>가장 감명 깊게 읽은 책 이름은?</option>
+                              <option>가장 좋아하는 스포츠 선수의 이름은?</option>
+                              <option>가장 아끼는 보물 1호는?</option>
+                           </select>
+                        </span>
+                     </div>
+                  </td>
+               </tr>
+               <tr class="cs-input-group">
+                  <th class="label"><label for="" class="eseen">답변</label></th>
+                  <td>
+                     <div class="check-area">
+                        <span class="full-input">
+                           <input type="text" name="osQa2">
+                        </span>
+                     </div>
+                  </td>
+               </tr>
+               </tbody>
+            </table>
+            <div class="search-qa mt40">
+               <i class="icon-set icon-info"></i>
+               문의가 필요하신 경우 <a href="#" class="underLine">rodrkddj@naver.com</a>로 문의해 주세요.
+            </div>
+            <div class="member-button">
+               <button type="button" class="bt-red" onclick="subPw()">비밀번호 찾기</button>
+            </div>
+         </div>
+      </div>
+   </form>
+</section>
+<script>
+    function subPw() {
+        if (!document.searchPw.osId.value) {
+            alert("아이디를 입력해주세요.")
+            return false;
+        }
+        if (!document.searchPw.osQa.value) {
+            alert("질문을 선택해주세요.")
+            return false;
+        }
+        if (!document.searchPw.osQa2.value) {
+            alert("답변을 입력해주세요.")
+            return false;
+        }
+        document.searchPw.submit()
+    }
+</script>
+
+</body>
+</html>

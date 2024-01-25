@@ -1,0 +1,194 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>약관동의</title>
+   <link rel="shortcut icon" type="image/x-icon" href="../img/developers/favicon.png">
+   <link rel="stylesheet" href="../css/bootstrap.css">
+   <link rel="stylesheet" href="../css/developers.css">
+   <link rel="stylesheet" href="../css/login.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="../js/login.js"></script>
+</head>
+<body>
+<header class="" id="">
+   <div class="cont-inner">
+      <h1>
+         <a href="../index.html"><span class="icon">span</span></a>
+      </h1>
+      <div class="gnb">
+         <ul class="main-menu">
+            <li class="subhover"><a href="" class="no-active">Apps</a>
+               <div class="submenu">
+                  <ul>
+                     <li><a href="">상품현황</a></li>
+                     <li><a href="">정산</a></li>
+                     <li><a href="">고객관리</a></li>
+                     <li><a href="">통계</a></li>
+                     <li><a href="">설정</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li><a href="" class="no-active">Support</a></li>
+            <li><a href="" class="no-active">Notice</a></li>
+         </ul>
+         <ul class="lang-menu">
+            <li>
+               <a href=""><span class="icon ">언어선택</span></a>
+               <div class="choice-lang">
+                  <ul>
+                     <li><a href="" class="no-active select-color">한국어</a></li>
+                     <li><a href="" class="no-active ">English</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li class="login-before">
+               <a href="login.html" style="cursor: pointer">로그인</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</header>
+
+<section class="content">
+   <div class="member-join-wrap">
+      <form action="loginMemberInsert.jsp" name="check" method="post">
+         <h2 class="join-title">회원가입</h2>
+         <div class="member-join-step">
+            <ul>
+               <li class="select"><span class="iconBox"><i class="icon-set icon-step1"></i></span>
+                  <span>약관동의</span>
+               </li>
+               <li><span class="iconBox"><i class="icon-set icon-step2"></i></span>
+                  <span>회원 정보 입력</span>
+               </li>
+               <li><span class="iconBox"><i class="icon-set icon-step4"></i></span>
+                  <span>가입완료</span>
+               </li>
+            </ul>
+         </div>
+
+         <div class="member-content">
+            <div class="member-cont-inner p-r">
+               <div class="p-r checkbox l-t"> <!--checkbox title-->
+                  <input type="checkbox" class="" id="select-all">
+                  <label for="select-all">
+                     <span>원스토어 개발자센터 이용약관에 모두 동의합니다.</span>
+                     <span>전체 동의는 필수 및 선택정보에 대한 동의도 포함되어 있으며, 개별적으로도 동의를 선택하실 수 있습니다.</span>
+                  </label>
+               </div> <!--checkbox title-->
+               <ul class="agree-list">
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" class="checkF" id="agree1">
+                        <label for="agree1">[필수] 만 14세 이상입니다.</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" class="checkF" id="agree2">
+                        <label for="agree2">[필수] 원스토어 개발자센터 이용약관</label>
+                     </div>
+                     <a href="" class="no-active">전문보기</a>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" class="checkF" id="agree3">
+                        <label for="agree3">[필수] 소프트웨어 판매 약관</label>
+                     </div>
+                     <a href="" class="no-active">전문보기</a>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" class="checkF" id="agree4">
+                        <label for="agree4">[필수] 개인정보 수집/이용 동의</label>
+                     </div>
+                     <a href="" class="no-active">전문보기</a>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" class="checkF" id="agree5">
+                        <label for="agree5">[필수] 전자금융거래약관</label>
+                     </div>
+                     <a href="" class="no-active">전문보기</a>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" class="checkF" id="agree6">
+                        <label for="agree6">[선택] 원스토어 글로벌 플랫폼 판매 특약</label>
+                     </div>
+                     <a href="" class="no-active">전문보기</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="member-button">
+            <a href="./loginMemberInsert.html"><button type="button" class="bt-red" disabled onclick="allCheckSubmit()">가입하기</button></a>
+         </div>
+      </form>
+   </div>
+</section>
+<script>
+   $(function () {
+      // 전체 체크
+      $("#select-all").on("click", function () {
+         var checked = $(this).prop("checked");
+         console.log(checked);
+         if (checked) {
+            $(".checkF").prop("checked", true);
+         } else {
+            $(".checkF").prop("checked", false);
+         }
+      })
+
+      // 개별 체크
+      $(".checkF").change(function () {
+         var chkTF = true;
+         for (var i = 0; i < $('.checkF').length; i++) {
+            if (!$('.checkF').eq(i).is(":checked")) {
+               chkTF = false;
+            }
+         }
+         // 하나라도 false 일 경우 전체 체크 체크박스 체크해제
+         if (chkTF) {
+            $("#select-all").prop("checked", true);
+            $('.bt-red').attr("disabled",false)
+         } else {
+            $("#select-all").prop("checked", false);
+            $('.bt-red').attr("disabled",true)
+         }
+      })
+
+      $("#select-all").on("click", function () {
+         if ($('#select-all').is(":checked")) {
+            chkTF = true;
+            $('.bt-red').attr("disabled",false)
+         } else {
+            chkTF=false;
+            $('.bt-red').attr("disabled",true)
+         }
+      })
+   })
+   function allCheckSubmit() {
+   }
+</script>
+<footer>
+   <div class="footer-top">
+      <div class="footer-inner">
+         <ul>
+            <li><a href="" class="no-active link">개발자센터소개</a></li>
+            <li><a href="" class="no-active link-bold">개인정보 처리방침</a></li>
+            <li><a href="" class="no-active link">이용약관</a></li>
+            <li><a href="" class="no-active link">지식재산권 보호센터</a></li>
+            <li><a href="" class="no-active link">무료법률지원</a></li>
+         </ul>
+      </div>
+   </div>
+</footer>
+</body>
+</html>
